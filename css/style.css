@@ -1,0 +1,139 @@
+/* 
+    Document   : style
+    Created on : Sep 22, 2013, 7:54:15 PM
+    Author     : tonyf_000
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+html body{
+    font-family: 'Rokkitt', serif;
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+    color: #180000;
+}
+
+#header{
+    text-align: center;
+    margin-top: 1em;
+}
+
+#header img{
+    margin: auto;
+    width: 60em;
+}
+
+#nav{
+    width: 12em;
+}
+
+#nav button{
+    font-size: 1.4em;
+    border: none;
+    width: 10em;
+    height: 2em;
+    margin: none;
+    float: left;
+    font-weight: bold;
+    background-color: rgb(59, 110, 143);
+    color: #f1f1f1;
+}
+
+#nav button:hover{
+    color: rgb(59, 110, 143);
+    background-color: #f1f1f1;
+}
+
+#nav .selected{
+    background-color: #180000;
+    color: #f1f1f1;
+}
+
+#content{
+    width: 50em;
+    border: 2px solid rgb(59, 110, 143);
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    border-radius: .5em;
+}
+
+#content #appName{
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+}
+
+#content h1{
+    margin: 0;
+    font-style: italic;
+}
+
+#content p{
+    font-size: 1.8em;
+}
+
+#content fieldset{
+    border-radius: 1em;
+    font-size: 1.8em;
+}
+
+#content fieldset form{
+    display: block;
+}
+
+#content ul{
+    list-style-type: none;
+}
+
+#content li{
+    font-size: 1.8em;
+}
+
+#content #result_banner{
+    text-align: center;
+}
+
+label{
+    display: inline-block;
+    width: 10em;
+}
+
+input{
+    width: 15em;
+    border-radius: .25em;
+}
+
+#submit{
+    background-color: rgb(59, 110, 143);
+    color: #f1f1f1;
+    width: 6em;
+    height: 2em;
+    border-radius: .5em;
+    margin-left: 14em;
+    font-weight: bold;
+}
+
+#submit:hover{
+    background-color: #f1f1f1;
+    color: rgb(59, 110, 143);
+}
+
+.italic{
+    font-style: italic;
+}
+
+a{
+    font-size: 1.8em;
+}
+
+.warning{
+    color: red;
+}
+
+footer p{
+    font-size: 1.8em;
+}
+
