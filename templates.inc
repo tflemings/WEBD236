@@ -2,7 +2,7 @@
 function main_header($title) { 
 $pages = array("home" => "Home",
                "h01" => "FizzBuzz",
-               "h02" => "Homework 2",
+               "h02" => "Employees",
                "h03" => "Homework 3",
                "h04" => "Homework 4",
                "h05" => "Homework 5",
@@ -78,4 +78,10 @@ function main_footer() { ?>
         </body>
     </html> <?php
 } 
+
+function error_page($message) {
+    main_header("Error"); ?>
+    <p>$message</p> <?php
+    main_footer();
+}
 ?>
