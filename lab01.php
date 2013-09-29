@@ -5,9 +5,9 @@ main_header("TrackURL");
 $top5 = readTopFive();
 ?>
 <p id="appName">TrackUrl Site</p>
-<p>Hello. Please submit a URL and a NICKNAME that you would like to track.</p>
+<p>Please use the forms below to register or visit a site.</p>
 <fieldset>
-    <legend>Input Your Data</legend>
+    <legend>Register A Site</legend>
     <form action="trackurl.php?selected=1&page=l01" method="post">
         <label id ="left">URL:</label>
         <label id="right">http://</label>
@@ -17,6 +17,14 @@ $top5 = readTopFive();
         <button type="submit" id="submit" name="page" value="fizzbuzz">Submit</button>
     </form>
 </fieldset> <br />
+<fieldset>
+    <legend>Go To A Site</legend>
+    <form action="gotourl.php?selected=1&page=l01" method="post">
+        <label>Enter Nickname:</label>
+            <input id="goto" name="goto"/>
+            <button type="submit" id="submit" name="page" value="fixxbuzz">GO</button>
+    </form>
+</fieldset>
 <div id="urls">
     <h1 id="tracked_sites">Top 5 Tracked Sites</h1>
     <table>
@@ -25,11 +33,14 @@ $top5 = readTopFive();
             <th>Nickname</th>
             <th>Count</th>
         </tr> <?php
-foreach($top5 as $row) { ?>
+foreach($top5 as $row) { 
+    $url = $row['url'];
+    $nickname = $row['nickname'];
+    $count = $row['click_count'];  ?>
         <tr>
-            <td><?php echo $row['url']; ?></td>
-            <td><?php echo $row['nickname']; ?></td>
-            <td><?php echo $row['click_count']; ?></td>
+            <td><a href="<?php echo "view_site.php?name=$nickname&url=$url"; ?>"><?php echo $url; ?></a></td>
+            <td><?php echo $nickname; ?></td>
+            <td><?php echo $count; ?></td>
         </tr> <?php
 } ?>
     </table>

@@ -78,10 +78,16 @@ html body{
 #content fieldset{
     border-radius: 1em;
     font-size: 1.8em;
+    border-color: rgb(59, 110, 143);
 }
 
 #content fieldset form{
     display: block;
+}
+
+#content legend{
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 #content ul{
@@ -144,10 +150,15 @@ input{
 #urls th{
     text-align: left;
     background-color: rgb(59, 110, 143);
+    color: #f1f1f1;
 }
 
 #urls td{
     background-color: #f1f1f1;
+}
+
+#urls a{
+    font-size: 1em;
 }
 
 .italic{
@@ -164,5 +175,10 @@ a{
 
 footer p{
     font-size: 1.8em;
+    margin: auto;
+}
+
+footer a{
+    font-size: 1em;
 }
 
