@@ -99,6 +99,16 @@ html body{
 label{
     display: inline-block;
     width: 10em;
+    float: left;
+}
+
+#left{
+    width: 5em;
+}
+
+#right{
+    width: 5em;
+    text-align: right;
 }
 
 input{
@@ -119,6 +129,25 @@ input{
 #submit:hover{
     background-color: #f1f1f1;
     color: rgb(59, 110, 143);
+}
+
+#tracked_sites{
+    margin-top: 5em;
+    text-align: center;
+}
+
+#urls table{
+    font-size: 1.8em;
+    width: 100%;
+}
+
+#urls th{
+    text-align: left;
+    background-color: rgb(59, 110, 143);
+}
+
+#urls td{
+    background-color: #f1f1f1;
 }
 
 .italic{
