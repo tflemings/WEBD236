@@ -33,4 +33,11 @@ function insertUrl($url, $nickname) {
     $sth -> bindParam(3, $count, PDO::PARAM_INT);
     $sth -> execute();
 }
+
+function incrementCount($nickname) {
+    global $dbh;
+    $sth = $dbh -> prepare("update url set click_count = click_count + 1 where nickname = ?");
+    $sth -> bindParam(1, $nickname);
+    $sth -> execute();
+}
 ?>

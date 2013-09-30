@@ -12,7 +12,10 @@ function view_added_site($url, $nickname) {
     main_footer();
 }
 
-function view_site() {
-    
+function pageNotFound() {
+    include 'templates.inc';
+    main_header("Not Found"); ?>
+    <p>No such URL found</p> <?php
+    main_footer();
 }
 ?>

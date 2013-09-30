@@ -19,10 +19,10 @@ $top5 = readTopFive();
 </fieldset> <br />
 <fieldset>
     <legend>Go To A Site</legend>
-    <form action="gotourl.php?selected=1&page=l01" method="post">
+    <form action="view_site.php" method="post">
         <label>Enter Nickname:</label>
-            <input id="goto" name="goto"/>
-            <button type="submit" id="submit" name="page" value="fixxbuzz">GO</button>
+            <input id="goto" name="name"/>
+            <button type="submit" id="submit" name="page" value="l01">GO</button>
     </form>
 </fieldset>
 <div id="urls">
@@ -38,7 +38,7 @@ foreach($top5 as $row) {
     $nickname = $row['nickname'];
     $count = $row['click_count'];  ?>
         <tr>
-            <td><a href="<?php echo "view_site.php?name=$nickname&url=$url"; ?>"><?php echo $url; ?></a></td>
+            <td><a href="<?php echo "view_site.php?name=$nickname"; ?>"><?php echo $url; ?></a></td>
             <td><?php echo $nickname; ?></td>
             <td><?php echo $count; ?></td>
         </tr> <?php
